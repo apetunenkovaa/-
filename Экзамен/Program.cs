@@ -11,7 +11,7 @@ namespace Экзамен
 {
     internal class Program
     {
-        private static object otv;
+        public static object otv;
 
         static void Main(string[] args)
         {
@@ -19,33 +19,20 @@ namespace Экзамен
 
             while (true)
             {
-                int rez=0;
-                Class1 obj=new Class1();
-                obj.zapis(rez);
-                Debug.WriteLine("Файл записан");
+               
+
+                Console.WriteLine("\nВведите сумму, которую хотите положить в банк:");
+                double sumVklad = Convert.ToDouble(Console.ReadLine());
                 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                double rez = PersentStavk(sumVklad);
+                Class1 obj = new Class1();
+                obj.trace();
+                obj.zapis(rez);//метод, вызываемый из Class1
+                Debug.WriteLine("Файл записан");
 
                 MessageBox.Show("Программа выполнена ", "Конец", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-
 
                 try
                 {
@@ -63,8 +50,22 @@ namespace Экзамен
                 return;
             }
         }
-    }
 
-    
+        public static double PersentStavk(double sumVklad)
+        {
+            double persStavk = 0;
+            if (sumVklad < 700000)
+            {
+                persStavk = sumVklad / 50000;
+            }
+            else if (sumVklad < 700000)
+            {
+                persStavk = 20;
+                //максимальная процентная ставка
+            }
+            return persStavk;
+        }
+
+    }
     
 }

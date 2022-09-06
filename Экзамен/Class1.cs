@@ -10,14 +10,13 @@ namespace Экзамен
 {
     internal class Class1
     {
+        
 
-        public void trace(int[] arr)
+        public void trace()
         {
             Trace.Listeners.Add(new TextWriterTraceListener("Debug.txt"));
-            for (int i = 0; i < arr.Length; i++)
-            {
-                Trace.WriteLine(arr[i]);
-            }
+
+            Trace.WriteLine("Программа запущена" );
 
             Trace.Flush();
         }
@@ -25,11 +24,11 @@ namespace Экзамен
         /// метод, предназначенный для записи результата в файл
         /// </summary>
         /// <param name="rez"></param>
-        public void zapis(int rez)
+        public void zapis(double rez)
         {
             string Path = "Результат.txt";   // Пропысываем полный путь к файлу
 
-            File.WriteAllText(Path, Convert.ToString(rez));    // Добавляем новое содержимое в файл
+            File.WriteAllText(Path, "Процентная ставка равна "+ Convert.ToString(rez));    // Добавляем новое содержимое в файл
 
             Console.WriteLine(File.ReadAllText(Path));
 
