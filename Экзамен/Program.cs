@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+
 
 namespace Экзамен
 {
@@ -13,10 +15,15 @@ namespace Экзамен
 
         static void Main(string[] args)
         {
-            MessageBox.Show("Программа запущена ", "Результат", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Программа запущена ", "Начало", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             while (true)
             {
+                int rez=0;
+                Class1 obj=new Class1();
+                obj.zapis(rez);
+                Debug.WriteLine("Файл записан");
+                
 
 
 
@@ -36,7 +43,7 @@ namespace Экзамен
 
 
 
-
+                MessageBox.Show("Программа выполнена ", "Конец", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
 
@@ -56,5 +63,8 @@ namespace Экзамен
                 return;
             }
         }
-    }   
+    }
+
+    
+    
 }
