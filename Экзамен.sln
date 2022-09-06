@@ -5,6 +5,13 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Экзамен", "Экзамен\Экзамен.csproj", "{1019ABE4-0004-45B6-A7BC-8955E28CDFE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{8CCBE365-E3DD-4FE6-9D5C-690C672745DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{FB88E996-F97E-4647-A637-25A66313A371}"
+	ProjectSection(SolutionItems) = preProject
+		UML-диграммы.vsdx = UML-диграммы.vsdx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{1019ABE4-0004-45B6-A7BC-8955E28CDFE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1019ABE4-0004-45B6-A7BC-8955E28CDFE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1019ABE4-0004-45B6-A7BC-8955E28CDFE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CCBE365-E3DD-4FE6-9D5C-690C672745DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CCBE365-E3DD-4FE6-9D5C-690C672745DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CCBE365-E3DD-4FE6-9D5C-690C672745DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CCBE365-E3DD-4FE6-9D5C-690C672745DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
